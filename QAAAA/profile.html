@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroTik - Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-avatar {
+            font-size: 4em;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #ff006e;
+            margin: 0 auto 20px;
+        }
+        
+        .profile-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #ff006e;
+        }
+        
+        .info-value {
+            color: #fff;
+        }
+        
+        .back-btn {
+            background: linear-gradient(45deg, #8338ec, #3a86ff);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .logout-btn {
+            background: linear-gradient(45deg, #ff4444, #ff6b6b);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .logout-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="logo">RetroTik</h1>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="homeBtn">Home</button>
+                <button class="nav-btn" id="blogBtn">Blog</button>
+                <button class="nav-btn active" id="profileBtn">Perfil</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <button class="back-btn" onclick="window.location.href='index.html'">← Voltar</button>
+            
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar" id="profileAvatar">👤</div>
+                    <h2 id="profileUsername">Usuário</h2>
+                </div>
+                
+                <div class="profile-info">
+                    <div class="info-row">
+                        <span class="info-label">📧 Email:</span>
+                        <span class="info-value" id="userEmail">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🔐 Método de Login:</span>
+                        <span class="info-value" id="loginMethod">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">📅 Último Login:</span>
+                        <span class="info-value" id="loginTime">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">⭐ Status:</span>
+                        <span class="info-value" style="color: #00ff41;">Online</span>
+                    </div>
+                </div>
+                
+                <button class="logout-btn" id="logoutBtn">🚪 Sair da Conta</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

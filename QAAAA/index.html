@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroTik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="logo">RetroTik</h1>
+            <div class="user-status" id="userStatus" style="display: none;">
+                <span class="status-text">Bem-vindo!</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn active" id="homeBtn">Home</button>
+                <button class="nav-btn" id="blogBtn">Blog</button>
+                <button class="nav-btn" id="profileBtn">Perfil</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="video-feed" id="videoFeed">
+                <div class="video-card active">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎮</div>
+                            <span class="username">@pac_man_master</span>
+                        </div>
+                        <p class="video-description">Pac-Man speedrun recorde mundial! #pacman #arcade #speedrun</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>5.2k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>189</span></button>
+                            <button class="action-btn share-btn">📤 <span>95</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🍄</div>
+                            <span class="username">@mario_bros_1985</span>
+                        </div>
+                        <p class="video-description">Super Mario Bros mundo 1-1 sem morrer! #mario #nintendo #nes</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>8.1k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>342</span></button>
+                            <button class="action-btn share-btn">📤 <span>156</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🏆</div>
+                            <span class="username">@donkey_kong_pro</span>
+                        </div>
+                        <p class="video-description">Donkey Kong level 100! Nostalgia pura! #donkeykong #classic</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>3.7k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>128</span></button>
+                            <button class="action-btn share-btn">📤 <span>67</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🚀</div>
+                            <span class="username">@space_invaders_og</span>
+                        </div>
+                        <p class="video-description">Space Invaders estratégia perfeita! #spaceinvaders #retro</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>2.9k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>87</span></button>
+                            <button class="action-btn share-btn">📤 <span>43</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🦔</div>
+                            <span class="username">@sonic_speed_demon</span>
+                        </div>
+                        <p class="video-description">Sonic Green Hill Zone em 30 segundos! #sonic #sega</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>6.8k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>234</span></button>
+                            <button class="action-btn share-btn">📤 <span>112</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎯</div>
+                            <span class="username">@centipede_master</span>
+                        </div>
+                        <p class="video-description">Centipede gameplay épico dos anos 80! #centipede #atari</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>1.5k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>56</span></button>
+                            <button class="action-btn share-btn">📤 <span>28</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🪨</div>
+                            <span class="username">@asteroids_pilot</span>
+                        </div>
+                        <p class="video-description">Asteroids survival mode! Quem consegue mais? #asteroids</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>2.1k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>73</span></button>
+                            <button class="action-btn share-btn">📤 <span>35</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">👻</div>
+                            <span class="username">@frogger_legend</span>
+                        </div>
+                        <p class="video-description">Frogger atravessando sem morrer! Skills! #frogger #skills</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>4.3k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>167</span></button>
+                            <button class="action-btn share-btn">📤 <span>89</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">⚡</div>
+                            <span class="username">@galaga_fighter</span>
+                        </div>
+                        <p class="video-description">Galaga bonus stage perfeito! #galaga #perfect #namco</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>3.2k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>94</span></button>
+                            <button class="action-btn share-btn">📤 <span>52</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🏎️</div>
+                            <span class="username">@pole_position_racer</span>
+                        </div>
+                        <p class="video-description">Pole Position lap record! Velocidade máxima! #poleposition</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>2.7k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>81</span></button>
+                            <button class="action-btn share-btn">📤 <span>41</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎸</div>
+                            <span class="username">@dig_dug_pro</span>
+                        </div>
+                        <p class="video-description">Dig Dug estratégia ninja! Level 10 cleared! #digdug</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>1.8k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>62</span></button>
+                            <button class="action-btn share-btn">📤 <span>31</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🔫</div>
+                            <span class="username">@contra_commander</span>
+                        </div>
+                        <p class="video-description">Contra code secrets revealed! Up up down down! #contra</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>7.9k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>298</span></button>
+                            <button class="action-btn share-btn">📤 <span>145</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">⭐</div>
+                            <span class="username">@qbert_hopper</span>
+                        </div>
+                        <p class="video-description">Q*bert cube jumping madness! Pyramid perfect! #qbert</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>2.4k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>76</span></button>
+                            <button class="action-btn share-btn">📤 <span>38</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🛸</div>
+                            <span class="username">@defender_hero</span>
+                        </div>
+                        <p class="video-description">Defender alien invasion! Save the humans! #defender</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>3.6k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>118</span></button>
+                            <button class="action-btn share-btn">📤 <span>59</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🌟</div>
+                            <span class="username">@missile_command_general</span>
+                        </div>
+                        <p class="video-description">Missile Command city defense! Strategic gameplay! #missilecommand</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>2.8k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>92</span></button>
+                            <button class="action-btn share-btn">📤 <span>46</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎾</div>
+                            <span class="username">@pong_champion</span>
+                        </div>
+                        <p class="video-description">Pong original! O primeiro videogame! #pong #retro #classic</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>4.7k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>156</span></button>
+                            <button class="action-btn share-btn">📤 <span>78</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎲</div>
+                            <span class="username">@joust_knight</span>
+                        </div>
+                        <p class="video-description">Joust flying combat! Medieval madness! #joust #williams</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>1.9k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>64</span></button>
+                            <button class="action-btn share-btn">📤 <span>32</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🕹️</div>
+                            <span class="username">@tempest_spinner</span>
+                        </div>
+                        <p class="video-description">Tempest vector graphics! Psychedelic gaming! #tempest</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>3.1k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>97</span></button>
+                            <button class="action-btn share-btn">📤 <span>48</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video class="retro-video" muted loop>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <div class="retro-effect"></div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="user-info">
+                            <div class="avatar">🎪</div>
+                            <span class="username">@robotron_survivor</span>
+                        </div>
+                        <p class="video-description">Robotron 2084 chaos survival! Twin stick madness! #robotron</p>
+                        <div class="video-actions">
+                            <button class="action-btn like-btn">💜 <span>5.4k</span></button>
+                            <button class="action-btn comment-btn">💬 <span>178</span></button>
+                            <button class="action-btn share-btn">📤 <span>87</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bottom-nav">
+            <button class="bottom-btn" id="uploadBtn">
+                <span class="btn-icon">📹</span>
+                <span>Postar</span>
+            </button>
+            <button class="bottom-btn" id="loginNavBtn" style="margin-left: 10px; background: linear-gradient(45deg, #8338ec, #3a86ff);">
+                <span class="btn-icon">🔐</span>
+                <span>Login</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

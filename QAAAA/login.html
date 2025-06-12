@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroTik - Entrar</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+        
+        <div class="login-card">
+            <div class="logo-section">
+                <h1 class="logo">RetroTik</h1>
+                <p class="tagline">Reviva os momentos épicos!</p>
+            </div>
+            
+            <div class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder=" " required>
+                    <label for="username">👤 Usuário ou email</label>
+                    <div class="input-border"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" placeholder=" " required>
+                    <label for="password">🔒 Senha</label>
+                    <div class="input-border"></div>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Esqueceu a senha?</a>
+                </div>
+                
+                <button class="login-btn" id="loginBtn">
+                    <span class="btn-text">Entrar</span>
+                    <div class="btn-loader"></div>
+                </button>
+                
+                <div class="divider">
+                    <span>ou</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <span class="social-icon">🌐</span>
+                        Continuar com Google
+                    </button>
+                    
+                    <button class="social-btn facebook-btn">
+                        <span class="social-icon">📘</span>
+                        Continuar com Facebook
+                    </button>
+                    
+                    </div>
+                
+                <div class="signup-section">
+                    <p>Não tem uma conta? <a href="#" class="signup-link" id="signupLink">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="preview-card">
+                <div class="preview-video">
+                    <div class="play-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="retro-scanlines"></div>
+                </div>
+                <div class="preview-info">
+                    <div class="preview-user">
+                        <div class="preview-avatar">🕺</div>
+                        <span>@retro_vibes</span>
+                    </div>
+                    <p>Dança dos anos 80! #retro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
